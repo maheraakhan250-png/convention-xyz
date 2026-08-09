@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For You Meri Jaan</title>
+  <title>For You</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <div id="screen-gift" class="screen active" onclick="triggerRoseTransition()">
     <div class="gift-box">🎁</div>
     <div class="gift-title">For you meri jaan</div>
-    <div class="gift-sub">(Tap to open for your suprise)</div>
+    <div class="gift-sub">(Tap to open for your surprise)</div>
   </div>
 
   <!-- Rose Transition Overlay -->
@@ -23,62 +23,61 @@
     <div class="card-container">
       <div class="card-title">From your love.</div>
       <div class="card-subtitle">This is how I want us to sit next to each other.</div>
-      
-      <!-- Couple Illustration -->
+
       <div class="couple-illustration">
-        <img src="assets/couple.jpg" alt="Couple Illustration">
+        <img src="couple.jpg" alt="Couple Illustration">
       </div>
 
       <div class="card-quote">
-        In your <span class="quote-pink">smile</span>, I found my <span class="quote-green">peace</span>.<br>
-        In your <span class="quote-pink">love</span>, I found my <span class="quote-gold">home</span>.
+        In your <span class="quote-pink">smile</span>, I found my peace.<br>
+        In your <span class="quote-pink">love</span>, I found my home.
       </div>
-      <div class="lock-btn" onclick="showKeypad()">🔒</div>
-      <div class="tap-hint">Tap to unlock for one more suprise</div>
-    </div>
 
-    <!-- Keypad Modal -->
-    <div id="keypad-modal" class="passcode-modal">
-      <p class="modal-title">Enter Passkey</p>
-      <div class="pin-dots">
-        <div class="dot" id="dot-0"></div>
-        <div class="dot" id="dot-1"></div>
-        <div class="dot" id="dot-2"></div>
-        <div class="dot" id="dot-3"></div>
-      </div>
-      <div class="keypad">
-        <div class="key" onclick="pressKey('1')">1</div>
-        <div class="key" onclick="pressKey('2')">2</div>
-        <div class="key" onclick="pressKey('3')">3</div>
-        <div class="key" onclick="pressKey('4')">4</div>
-        <div class="key" onclick="pressKey('5')">5</div>
-        <div class="key" onclick="pressKey('6')">6</div>
-        <div class="key" onclick="pressKey('7')">7</div>
-        <div class="key" onclick="pressKey('8')">8</div>
-        <div class="key" onclick="pressKey('9')">9</div>
-        <div class="key" onclick="clearPin()">C</div>
-        <div class="key" onclick="pressKey('0')">0</div>
-        <div class="key" onclick="checkPin()">✓</div>
-      </div>
+      <div class="lock-btn" onclick="showKeypad()">🔒</div>
+      <div class="tap-hint">Tap to unlock one more suprise</div>
     </div>
   </div>
 
-  <!-- Screen 3: Photo Gallery & Love Letter (Manual Scroll) -->
+  <!-- Keypad Modal -->
+  <div id="keypad-modal" class="passcode-modal">
+    <div class="modal-title">Enter Passkey</div>
+    <div class="pin-dots">
+      <div class="dot" id="dot-0"></div>
+      <div class="dot" id="dot-1"></div>
+      <div class="dot" id="dot-2"></div>
+      <div class="dot" id="dot-3"></div>
+    </div>
+    <div class="keypad">
+      <div class="key" onclick="pressKey('1')">1</div>
+      <div class="key" onclick="pressKey('2')">2</div>
+      <div class="key" onclick="pressKey('3')">3</div>
+      <div class="key" onclick="pressKey('4')">4</div>
+      <div class="key" onclick="pressKey('5')">5</div>
+      <div class="key" onclick="pressKey('6')">6</div>
+      <div class="key" onclick="pressKey('7')">7</div>
+      <div class="key" onclick="pressKey('8')">8</div>
+      <div class="key" onclick="pressKey('9')">9</div>
+      <div class="key" onclick="clearPin()">C</div>
+      <div class="key" onclick="pressKey('0')">0</div>
+      <div class="key" onclick="clearPin()">⌫</div>
+    </div>
+  </div>
+
+  <!-- Screen 3: Main Gallery Content -->
   <div id="screen-main" class="screen">
     <div class="gallery-grid">
-      <div class="polaroid" style="--r: -3"><img src="assets/photo1.jpg" alt="Photo 1"></div>
-      <div class="polaroid" style="--r: 2"><img src="assets/photo2.jpg" alt="Photo 2"></div>
-      <div class="polaroid" style="--r: -4"><img src="assets/photo3.jpg" alt="Photo 3"></div>
-      <div class="polaroid" style="--r: 3"><img src="assets/photo4.jpg" alt="Photo 4"></div>
-      <div class="polaroid" style="--r: -2"><img src="assets/photo5.jpg" alt="Photo 5"></div>
-      <div class="polaroid" style="--r: 4"><img src="assets/photo6.jpg" alt="Photo 6"></div>
-      <div class="polaroid" style="--r: -3"><img src="assets/photo7.jpg" alt="Photo 7"></div>
-      <div class="polaroid" style="--r: 1"><img src="assets/photo8.jpg" alt="Photo 8"></div>
+      <div class="polaroid" style="--r: -3"><img src="photo1.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: 2"><img src="photo2.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: 4"><img src="photo3.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: -2"><img src="photo4.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: -4"><img src="photo5.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: 3"><img src="photo6.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: -1"><img src="photo7.jpg" alt="Memory"></div>
+      <div class="polaroid" style="--r: 2"><img src="photo8.jpg" alt="Memory"></div>
     </div>
 
     <div class="letter-card">
-      <p><strong>To My Laddu,</strong></p><br>
-   <p> My love, MY future hubby, Meri jaan, Jaanu.. "I LOVE U" woh 3 words joh aap sunna chare the muh se kab se.. Finally I LOVE U meri jaan, I know bhut wait karai aapku mai yeh bolne ke vaste.. bas mere andaaz me bolna bolke thi... u know jab aap bolte ki i am so lucky to have u in my life but aap se jyada lucky to mai hun... like iss generation me jahaan roz video call rehta ,roz milna rehta ,male ego bolke apni marzii chalate partner , respect nai karte partner.. aisi generation me mujhe aap mile joh bina mile, bina roz video call kare merse itti mohabbat karte , mere decision ku respect karte , mere situations samajte , mujhe samjhaate..meri care karte  like a father , protective hi mere vaste , thode possesive bhi.. isse jyada aur ek ladki ku kya hona jaanu...I am the lukciest person in the world to have u i my life.. meri duaon ka asar hai
+    <p> My love, MY future hubby, Meri jaan, Jaanu.. "I LOVE U" woh 3 words joh aap sunna chare the muh se kab se.. Finally I LOVE U meri jaan, I know bhut wait karai aapku mai yeh bolne ke vaste.. bas mere andaaz me bolna bolke thi... u know jab aap bolte ki i am so lucky to have u in my life but aap se jyada lucky to mai hun... like iss generation me jahaan roz video call rehta ,roz milna rehta ,male ego bolke apni marzii chalate partner , respect nai karte partner.. aisi generation me mujhe aap mile joh bina mile, bina roz video call kare merse itti mohabbat karte , mere decision ku respect karte , mere situations samajte , mujhe samjhaate..meri care karte  like a father , protective hi mere vaste , thode possesive bhi.. isse jyada aur ek ladki ku kya hona jaanu...I am the lukciest person in the world to have u i my life.. meri duaon ka asar hai
     <p> Meri pehli mohabbat , meri chahat , meri rooh ka sukoon hai aap.</p>
     <p> Literally aapse jitni mohabbat mai kartu woh alfaazoh se bayaan nai karsakru, jab aap apne dukh, pareshaani bayaan karte  Literally meri rooh roti mlm .. mai mehsoos kartu aapka dard .. jaisa mai khud woh situation me hun aur woh merpe bitri.. Aap ki khushi me aapse jyada khush hotu .. Aapki family meri family hai bolleru.. meri duaon me mere maa baap ke  baad mai aapku yaad kartu..</p>
     <p> Aap merse zara bhi naraaz hue literally merku neend nai ati bechain rehtu , aisa lagta  jaise jaan nikalri meri bolke.. Aap jab jealous hote kasam se aur pyaar ata aapke.. Aap jab fikar karte meri , meri choti se choti cheez yaad rakhte .. aur mohabbat badjaati aapse jaanu .. Aap jab mere nakhre uthate, mere mood swings ku handle  karte , mere sath bachche banjaate, merku safe feel karate ...isliye  your are my second safest place in the world...    </p>
@@ -94,13 +93,11 @@ the warmth that fills the empty spaces of my heart
 <p>And in your love, I’ve found
 A reason to believe in forever.
 <p>I LOVE U to the moon and back.  </p>
-    <aap class=""></aap>     </p><br>
-      <p><strong>Forever and always,</strong><br><strong>Your Love</strong></p>
-    </div>
+</div>
 
     <div class="footer-msg">
-      I LOVE YOU LADDU(meri jaan)
-      <div class="footer-sub">From, your Vazii</div>
+      I LOVE YOU Laddu 
+      <div class="footer-sub">From, your forever</div>
     </div>
   </div>
 
