@@ -72,13 +72,11 @@ body {
   z-index: 99;
   display: none;
   
-  /* Uses your assets/roses.png image */
-  background-image: url('assets/roses.png');
+  background-image: url('roses.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   
-  /* Initial state before bloom animation */
   clip-path: inset(0 0 100% 0);
   opacity: 0;
   transform: scale(1.05);
@@ -92,7 +90,6 @@ body {
   animation: roseSplit 0.8s cubic-bezier(0.7, 0, 0.3, 1) forwards;
 }
 
-/* Animation 1: Sweeping bloom fill from top to bottom */
 @keyframes roseUnveil {
   0% {
     clip-path: inset(0 0 100% 0);
@@ -106,7 +103,6 @@ body {
   }
 }
 
-/* Animation 2: Opens up from middle side-by-side to reveal next page */
 @keyframes roseSplit {
   0% {
     clip-path: inset(0 0 0 0);
@@ -254,7 +250,7 @@ body {
   background: #F0E2D5;
 }
 
-/* Screen 3: Main Content (Manual Scroll) */
+/* Screen 3: Main Gallery Content */
 #screen-main {
   justify-content: flex-start;
   padding: 50px 20px;
@@ -321,7 +317,6 @@ body {
   margin-top: 5px;
 }
 
-/* Animations */
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.08); }
